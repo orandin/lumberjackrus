@@ -21,6 +21,7 @@ func init() {
 			MaxBackups: 1,
 			MaxAge:     1,
 			Compress:   false,
+			LocalTime:  false,
 		},
 		logrus.InfoLevel,
 		&logrus.TextFormatter{},
@@ -34,6 +35,7 @@ func init() {
 				MaxBackups: 1,     // optional
 				MaxAge:     1,     // optional
 				Compress:   false, // optional
+				LocalTime:  false, // optional
 			},
 		},
 	)

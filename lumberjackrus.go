@@ -53,6 +53,7 @@ func NewHook(defaultLogger *LogFile, minLevel logrus.Level, formatter logrus.For
 			MaxBackups: defaultLogger.MaxBackups,
 			MaxAge:     defaultLogger.MaxAge,
 			Compress:   defaultLogger.Compress,
+			LocalTime:  defaultLogger.LocalTime,
 		},
 		minLevel:      minLevel,
 		formatter:     formatter,
@@ -74,6 +75,7 @@ func NewHook(defaultLogger *LogFile, minLevel logrus.Level, formatter logrus.For
 				MaxBackups: config.MaxBackups,
 				MaxAge:     config.MaxAge,
 				Compress:   config.Compress,
+				LocalTime:  config.LocalTime,
 			}
 		}
 	}
